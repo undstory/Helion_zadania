@@ -1,4 +1,14 @@
 th {
-    cursor: pointer;
-  }
-  
+  cursor: pointer;
+}
+
+.input {
+  width: 50%;
+}
+
+.filtrWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
