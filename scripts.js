@@ -1,5 +1,5 @@
 import drawContent from "./helpers/drawContent.js";
-
+import sortTable from "./helpers/sortTable.js";
 const tbody = document.querySelector("tbody");
 // const thead = document.querySelector('thead');
 const button = document.querySelector("button");
@@ -13,23 +13,8 @@ const sortBy = (e) => {
   let index = ths.indexOf(target);
   const df = document.createDocumentFragment();
 
-  if (direction) {
-    trs.sort(function (a, b) {
-      const tdA = a.children[index].textContent;
-      const tdB = b.children[index].textContent;
-
-     return  tdA<tdB ? -1 : tdA>tdB ? 1 : 0
-    });
-    direction = !direction;
-  } else {
-    trs.sort(function (a, b) {
-      const tdA = a.children[index].textContent;
-      const tdB = b.children[index].textContent;
- 
-      return tdA>tdB ? -1 : tdA<tdB ? 1 : 0
-    });
-    direction = !direction;
-  }
+  sortTable(direction, index, trs)
+  direction = !direction
 
   trs.forEach(function (tr) {
     df.appendChild(tr);
