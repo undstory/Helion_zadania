@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "ident": "ANFIBY",
+        "tytul": "Anatomia i fizjologia dla bystrzaków",
+        "liczba_stron": 376,
+        "data_wydania": "2009-03-18"
+    },
+    {
+        "id": 2,
+        "ident": "ANGBYS",
+        "tytul": "Angielski dla bystrzaków",
+        "liczba_stron": 325,
+        "data_wydania": "2017-08-30"
+    },
+    {
+        "id": 3,
+        "ident": "ANTEB4",
+        "tytul": "Analiza techniczna dla bystrzaków. Wydanie IV",
+        "liczba_stron": 368,
+        "data_wydania": "2021-03-09"
+    },
+    {
+        "id": 4,
+        "ident": "BIOBY2",
+        "tytul": "Biologia dla bystrzaków. Wydanie II",
+        "liczba_stron": 368,
+        "data_wydania": "2017-08-17"
+    },
+    {
+        "id": 5,
+        "ident": "BIZNBY",
+        "tytul": "Tworzenie biznesplanu dla bystrzaków",
+        "liczba_stron": 416,
+        "data_wydania": "2009-03-18"
+    },
+    {
+        "id": 6,
+        "ident": "BIZUBY",
+        "tytul": "Biżuteria i koraliki dla bystrzaków. Wydanie II",
+        "liczba_stron": 392,
+        "data_wydania": "2014-08-27"
+    }
+]
+
+
