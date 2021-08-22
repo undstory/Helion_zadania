@@ -12,3 +12,9 @@ th {
   align-items: center;
   justify-content: center;
 }
+
+.error1,
+.error2 {
+  font-weight: bold;
+  display: none;
+}
