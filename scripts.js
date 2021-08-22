@@ -49,6 +49,7 @@ const drawTable = (myData) => {
   books.forEach((book) => {
     tbody.appendChild(drawContent(book)); // do każdego obiektu funkcja drawContent z helpers rysuje rząd tabeli
   });
+  button.setAttribute('disabled', 'disabled')
 };
 
 button.addEventListener("click", function () { // funkcja fetch pobiera dane z pliku json
