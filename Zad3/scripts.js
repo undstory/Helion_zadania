@@ -11,11 +11,11 @@ const error2 = document.querySelector(".error2");
 let direction = true;
 
 input.addEventListener("keyup", (e) => {
-  e.preventDefault(); 
+  e.preventDefault();
   const inputValue = input.value.toLowerCase();
   const trs = [...document.querySelectorAll("tbody tr")];
   if (inputValue == "") {
-    error2.style.display = "block"; 
+    error2.style.display = "block";
     return false;
   }
   error2.style.display = "none";
@@ -23,19 +23,19 @@ input.addEventListener("keyup", (e) => {
 });
 
 const sortBy = (e) => {
-  let target = e.target; 
+  let target = e.target;
   const trs = [...document.querySelectorAll("tbody tr")];
   let index = ths.indexOf(target); // indeks klikniętego elementu th tabeli
   const df = document.createDocumentFragment();
 
-  sortTable(direction, index, trs); 
+  sortTable(direction, index, trs);
   direction = !direction; // odwracamy kierunek sortowania 
 
   trs.forEach(function (tr) {
     df.appendChild(tr);
   });
 
-  tbody.appendChild(df); 
+  tbody.appendChild(df);
 };
 
 for (let i = 0; i < ths.length; i++) {
@@ -43,7 +43,7 @@ for (let i = 0; i < ths.length; i++) {
 }
 
 
-const drawTable = (myData) => { 
+const drawTable = (myData) => {
   const { books } = myData;  // destrukturyzacja wyciąga potrzebne dane z pliku json
 
   books.forEach((book) => {
