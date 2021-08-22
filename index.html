@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.25/datatables.min.css"/>
-    <title>Zadanie Helion</title>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title mt-5 pl-3">Lista książek</h1>
-        <button class="button is-info ml-3" type="button">Pobierz listę książek</button>
-        <div class="filtrWrapper m-3">
-            <label for="search">Szukaj</label><input class="input is-info m-3" type="search" />
-        </div>
-       
-        <table id="example" class="table is-bordered mt-5 m-3 is-fullwidth">
-            <thead>
-                <tr>
-              
-                    <th>Ident</th>
-                    <th>Tytuł</th>
-                    <th>Liczba stron</th>
-                    <th>Data wydania</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <p class="error1">Nie znaleziono frazy</p>
-        <p class="error2">Wpisz frazę</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Zadanie 3 Helion</title>
+  </head>
+  <body>
+    <div class="container p-3">
+      <h1 class="title mt-5 pl-3">Lista książek</h1>
+      <button class="button is-info ml-3" type="button">
+        Pobierz listę książek
+      </button>
+      <div class="filtr__wrapper m-3">
+        <label for="search">Szukaj</label
+        ><input id="search" class="input is-info m-3" type="search" />
+      </div>
+
+      <table id="example" class="table is-bordered mt-5 m-3 is-fullwidth">
+        <thead>
+          <tr>
+            <th title="Sortuj!">Ident</th>
+            <th title="Sortuj!">Tytuł</th>
+            <th title="Sortuj!">Liczba stron</th>
+            <th title="Sortuj!">Data wydania</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="error1">Nie znaleziono frazy</p>
+      <p class="error2">Wpisz frazę</p>
     </div>
-<script src="scripts.js" type="module" ></script>
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.25/datatables.min.js"></script>
-</body>
-</html> 
-
-
- 
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>
